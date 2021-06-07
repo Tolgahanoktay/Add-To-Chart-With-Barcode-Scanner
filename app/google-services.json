@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "723557754537",
+    "firebase_url": "https://reviewapplication-32f7d.firebaseio.com",
+    "project_id": "reviewapplication-32f7d",
+    "storage_bucket": "reviewapplication-32f7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723557754537:android:adf3e83dfa74961a78abb8",
+        "android_client_info": {
+          "package_name": "com.tolgahanoktay.basketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723557754537-40ac5tk1nu9l7ddcgc37hph01qlgapkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAismMUWFlelLhjB-qSYEDL-357yp8u3iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723557754537-40ac5tk1nu9l7ddcgc37hph01qlgapkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

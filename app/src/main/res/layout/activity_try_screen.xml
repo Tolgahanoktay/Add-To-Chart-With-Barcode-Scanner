@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TryScreen">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="430dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:orientation="horizontal"
+        android:text="  ALIŞVERİŞ LİSTESİ"
+        android:textAlignment="viewStart"
+        android:textColor="#030006"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="455dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:orientation="horizontal"
+        android:text="TOLGAHAN O."
+        android:textAlignment="viewEnd"
+        android:textColor="#030006"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <FrameLayout
+        android:layout_width="940dp"
+        android:layout_height="455dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="650dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/corner_button"
+            android:fontFamily="@font/montserrat"
+            android:text="Ürün Ekle"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:layout_width="630dp"
+            android:layout_height="435dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_layouttwo">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reyclerView"
+                android:layout_margin="8dp"
+                android:layout_width="620dp"
+                android:layout_height="370dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="395dp"
+                android:fontFamily="@font/montserrat"
+                android:orientation="horizontal"
+                android:text="TOPLAM TUTAR"
+                android:textAlignment="center"
+                android:textColor="#50AD35"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="569dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="395dp"
+                android:fontFamily="@font/montserrat"
+                android:orientation="horizontal"
+                android:text="FİYAT"
+                android:textAlignment="center"
+                android:textColor="#50AD35"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="569dp" />
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="280dp"
+            android:layout_height="381dp"
+            android:layout_marginLeft="650dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/indir" />
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/tente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
